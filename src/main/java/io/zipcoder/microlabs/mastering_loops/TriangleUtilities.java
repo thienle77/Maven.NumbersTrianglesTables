@@ -4,10 +4,11 @@ public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
         StringBuilder sb = new StringBuilder();
-            int index = 0;
-            while (index < numberOfRows) {
-                String thisRow = getRow(index);
-                sb.append(thisRow);
+            int idx = 1;
+            while (idx < numberOfRows) {
+                String thisRow = getRow(idx);
+                sb.append(thisRow).append("\n");
+                idx++;
             }
             return sb.toString();
     }
